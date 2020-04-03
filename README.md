@@ -17,9 +17,17 @@ Start with amazon's flask-ask [tutorial](https://developer.amazon.com/blogs/post
 
 
 # To Run:
+## Start the Application
 In a terminal window, navigate to the directory that has the code and run
-```python3 ./app.py```
-Open a new terminal window using `ctrl` `alt` `t`
-```./ngrok http 5000```
 
+```python3 ./app.py```
+## Open an ngrok channel
+Open a new terminal window using `ctrl` `alt` `t`
+then run
+
+```./ngrok http 5000```
+Leave this window open
+
+## Point the skill to the channel
 open alexa skill
+update the default endpoint with the https://########.ngrok.io url displayed in the terminal next to "Forwarding" when you ran the `./ngrok http 5000` command
