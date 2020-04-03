@@ -1,6 +1,9 @@
 # Alexa-Skill
 Alexa Voice Menus and JSON requests
 
+Based mostly on amazon's flask-ask [tutorial](https://developer.amazon.com/blogs/post/Tx14R0IYYGH3SKT/Flask-Ask:-A-New-Python-Framework-for-Rapid-Alexa-Skills-Kit-Development)
+
+
 # To Set Up:
 ## Install Pip:
 download here
@@ -13,7 +16,6 @@ download here
 ## Downgrade Cryptography:
 install cryptography==2.2.4me.py
 
-Start with amazon's flask-ask [tutorial](https://developer.amazon.com/blogs/post/Tx14R0IYYGH3SKT/Flask-Ask:-A-New-Python-Framework-for-Rapid-Alexa-Skills-Kit-Development)
 
 
 # To Run:
