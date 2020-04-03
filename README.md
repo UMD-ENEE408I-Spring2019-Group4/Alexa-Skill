@@ -29,7 +29,7 @@ this threw an error when I first tried it.  I did a ton of googling, accidentall
 3. Follow steps 1-3  in ngrok's [setup tutorial](https://dashboard.ngrok.com/signup)
 
 ## Downgrade Cryptography (semi-optional)
-This solved a "internal server error 500" that ngrok would throw when alexa launched the app.  You can try skipping this step, you might not get this error. who knows?
+This solved a "internal server error 500" that ngrok would throw when alexa launched the app.  You can try skipping this step, you might not get this error, who knows?
 
 In the terminal run
 
@@ -40,19 +40,25 @@ In the terminal run
 In a terminal window, navigate to the directory that has the code and run
 
 `python3 ./app.py`
+
+Leave the tab ope 
 ## Open an ngrok channel
-Open a new terminal window using `ctrl` `alt` `t`
+Open a new tab in the terminal window using `ctrl` `alt` `t`
 then run
 
 `./ngrok http 5000`
 
+copy the https://###.ngrok.io url displayed in the terminal next to "Forwarding"
+
 Leave this window open
 
 ## Point the skill to the channel
-1. Open the alexa skill.
-2. update the endpoint with the https://###.ngrok.io url displayed in the terminal next to "Forwarding" when you ran the `./ngrok http 5000` command.  
-3. Save these changes.
+1. Open the desired alexa skill from this [list](https://developer.amazon.com/alexa/console/ask?).
+2. Go to  the endpoint tab on the side
+3. Set the Default Region to be the https://###.ngrok.io url you just coppied
+4. Set the SSL certificate type to be the second 'wildcard' option
+5. Save these changes with the button at the top of the page.
 
-## Upload skill to Echo
+## Upload the skill to the Echo
 I don't know yet.  For now use the 'test' tab in the Amazon skill console
 
