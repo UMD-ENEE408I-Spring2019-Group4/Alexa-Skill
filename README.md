@@ -41,7 +41,7 @@ In a terminal window, navigate to the directory that has the code and run
 
 `python3 ./app.py`
 
-Leave the tab ope 
+Leave the tab open 
 ## Open an ngrok channel
 Open a new tab in the terminal window using `ctrl` `alt` `t`
 then run
@@ -52,9 +52,9 @@ copy the https://###.ngrok.io url displayed in the terminal next to "Forwarding"
 
 Leave this window open
 
-## Point the skill to the channel
+## Point the Alexa skill to the ngrok channel
 1. Open the desired alexa skill from this [list](https://developer.amazon.com/alexa/console/ask?).
-2. Go to  the endpoint tab on the side
+2. Go to  the endpoint tab on the leftnside
 3. Set the Default Region to be the https://###.ngrok.io url you just coppied
 4. Set the SSL certificate type to be the second 'wildcard' option
 5. Save these changes with the button at the top of the page.
